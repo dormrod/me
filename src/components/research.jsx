@@ -8,9 +8,9 @@ export default class Research extends Component {
                     <div id="colorlib-counter" className="colorlib-counters" style={{backgroundImage: 'url(images/heart.png)'}} data-stellar-background-ratio="0.1"><div class="overlay"></div>
                     <div className="colorlib-narrow-content">
                         <div className="row">
-                            <div className="col-md-12">
+                            <div className="col-md-6">
                                 <div className="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div className="col-md-12">
+                                    <div className="col-md-6">
                                         <div className="about-desc">
                                             <h1 className="colorlib-heading">Research</h1>
                                             <h2 className="colorlib-heading">Overview</h2>

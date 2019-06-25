@@ -286,7 +286,9 @@
 		})
 	};
 
+	// Added by DOM
 
+	//Random theme generator
 	var genThemes = ['Computational Geometry','Molecular Simulation Methods','2D Materials','Network Theory','Graph Theory',
 		'Percolation Theory','Maximum Entropy Methods'];
 	var currGenThemes = ['Molecular Simulation Methods','Computational Geometry','Network Theory']
@@ -322,7 +324,6 @@
 			currSpeThemes[randomLiIndex] = speThemes[randomThemesIndex]
 		}
 	}, Math.random()*3000+3000);
-
 
 	// Document on load.
 	$(function(){

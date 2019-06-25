@@ -286,6 +286,44 @@
 		})
 	};
 
+
+	var genThemes = ['Computational Geometry','Molecular Simulation Methods','2D Materials','Network Theory','Graph Theory',
+		'Percolation Theory','Maximum Entropy Methods'];
+	var currGenThemes = ['Molecular Simulation Methods','Computational Geometry','Network Theory']
+	var genLis = document.getElementsByClassName('randomGeneralResearch');
+
+	window.setInterval(function changeNameRandomly1() {
+		var randomThemesIndex = Math.floor(Math.random() * genThemes.length);
+		var randomLiIndex = Math.floor(Math.random() * genLis.length);
+		if (!currGenThemes.includes(genThemes[randomThemesIndex])) {
+			$(genLis[randomLiIndex]).fadeOut("fast", function () {
+				$(genLis[randomLiIndex]).html(genThemes[randomThemesIndex]);
+				$(genLis[randomLiIndex]).fadeIn();
+			}.bind(this));
+			currGenThemes[randomLiIndex] = genThemes[randomThemesIndex]
+			console.log(currGenThemes)
+		}
+
+	}, Math.random()*3000+3000);
+
+	var speThemes = ['Monte Carlo Simulation','Molecular Dynamics','Voronoi Diagrams','Radical Tessellations','Ring Structure',
+	'Graphene','Silica Bilayers','Glass Structure','Amorphous Materials','Fullerenes','Colloidal Monolayers'];
+	var currSpeThemes = ['Monte Carlo Simulation','Voronoi Diagrams','Glass Structure']
+	var speLis = document.getElementsByClassName('randomSpecificResearch');
+
+	window.setInterval(function changeNameRandomly2() {
+		var randomThemesIndex = Math.floor(Math.random() * speThemes.length);
+		var randomLiIndex = Math.floor(Math.random() * speLis.length);
+		if (!currSpeThemes.includes(speThemes[randomThemesIndex])) {
+			$(speLis[randomLiIndex]).fadeOut("fast", function () {
+				$(speLis[randomLiIndex]).html(speThemes[randomThemesIndex]);
+				$(speLis[randomLiIndex]).fadeIn();
+			}.bind(this));
+			currSpeThemes[randomLiIndex] = speThemes[randomThemesIndex]
+		}
+	}, Math.random()*3000+3000);
+
+
 	// Document on load.
 	$(function(){
 		fullHeight();

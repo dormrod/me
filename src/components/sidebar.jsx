@@ -16,9 +16,10 @@ export default class Sidebar extends Component {
                             <ul>
                                 <li className="active"><a href="#home" data-nav-section="home">Home</a></li>
                                 <li><a href="#research" data-nav-section="research">Research</a></li>
+                                <li><a href="#gallery" data-nav-section="gallery">Gallery</a></li>
                                 <li><a href="#pubs" data-nav-section="pubs">Publications</a></li>
-                                <li><a href="#" data-nav-section="Coding">Coding</a></li>
-                                <li><a href="#" data-nav-section="Podcast">Podcast</a></li>
+                                <li><a href="#coding" data-nav-section="coding">Coding</a></li>
+                                <li><a href="#podcast" data-nav-section="podcast">Podcast</a></li>
                                 <li><a href="#" data-nav-section="Podcast">CV</a></li>
                             </ul>
                         </div>

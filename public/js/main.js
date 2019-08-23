@@ -289,8 +289,29 @@
 	// Added by DOM
 
 	//Random theme generator
+	var themes = ['Computational Geometry','Molecular Simulation Methods','2D Materials','Network Theory','Graph Theory',
+		'Percolation Theory','Maximum Entropy Methods','Soft Condensed Matter','Monte Carlo Simulation','Molecular Dynamics',
+		'Voronoi Diagrams','Radical Tessellations','Ring Structure', 'Graphene','Silica Bilayers','Glass Structure','Amorphous Materials',
+		'Fullerenes','Colloidal Monolayers','Simulated Annealing','Bond Switching Algorithms','Persistent Homology'];
+	var currThemes = ['Molecular Simulation Methods','Computational Geometry','Network Theory','Persistent Homology','Percolation Theory']
+	var lis = document.getElementsByClassName('randomResearch');
+
+	window.setInterval(function changeResearch() {
+		var randomThemesIndex = Math.floor(Math.random() * themes.length);
+		var randomLiIndex = Math.floor(Math.random() * lis.length);
+		if (!currThemes.includes(themes[randomThemesIndex])) {
+			$(lis[randomLiIndex]).fadeOut("fast", function () {
+				$(lis[randomLiIndex]).html(themes[randomThemesIndex]);
+				$(lis[randomLiIndex]).fadeIn();
+			}.bind(this));
+			currThemes[randomLiIndex] = themes[randomThemesIndex]
+			// console.log(currThemes)
+		}
+
+	}, 2000);
+
 	var genThemes = ['Computational Geometry','Molecular Simulation Methods','2D Materials','Network Theory','Graph Theory',
-		'Percolation Theory','Maximum Entropy Methods'];
+		'Percolation Theory','Maximum Entropy Methods','Soft Condensed Matter',];
 	var currGenThemes = ['Molecular Simulation Methods','Computational Geometry','Network Theory']
 	var genLis = document.getElementsByClassName('randomGeneralResearch');
 
@@ -309,7 +330,8 @@
 	}, Math.random()*3000+3000);
 
 	var speThemes = ['Monte Carlo Simulation','Molecular Dynamics','Voronoi Diagrams','Radical Tessellations','Ring Structure',
-	'Graphene','Silica Bilayers','Glass Structure','Amorphous Materials','Fullerenes','Colloidal Monolayers'];
+	'Graphene','Silica Bilayers','Glass Structure','Amorphous Materials','Fullerenes','Colloidal Monolayers','Simulated Annealing',
+	'Persistent Homology'];
 	var currSpeThemes = ['Monte Carlo Simulation','Voronoi Diagrams','Glass Structure']
 	var speLis = document.getElementsByClassName('randomSpecificResearch');
 

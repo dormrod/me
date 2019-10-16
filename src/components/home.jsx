@@ -16,7 +16,7 @@ export default class Home extends Component {
                                                 <div className="desc">
                                                     {/*<h1>Hi, I'm David!</h1>*/}
                                                     <h1>I am a PhD student in Theoretical Chemistry at the University of Oxford,
-                                                        ... .</h1>
+                                                        here's a little bit about myself and my research.</h1>
                                                     {/*<p><a className="btn btn-primary btn-learn">Download CV <i className="icon-download4" /></a></p>*/}
                                                 </div>
                                             </div>

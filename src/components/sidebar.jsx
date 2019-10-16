@@ -7,7 +7,7 @@ export default class Sidebar extends Component {
                 <nav href="#" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
                 <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
                     <div className="text-center">
-                        <div className="author-img" style={{backgroundImage: 'url(images/me.jpg)'}} />
+                        <div className="author-img" style={{backgroundImage: 'url(images/me_bw.jpg)'}} />
                         <h1 id="colorlib-logo"><a href="index.html">David Ormrod Morley</a></h1>
                         {/*<span className="position"><a href="#">UI/UX/Designer</a> in Philippines</span>*/}
                     </div>
@@ -20,9 +20,13 @@ export default class Sidebar extends Component {
                                 <li><a href="#pubs" data-nav-section="pubs">Publications</a></li>
                                 <li><a href="#coding" data-nav-section="coding">Coding</a></li>
                                 <li><a href="#podcast" data-nav-section="podcast">Podcast</a></li>
-                                <li><a href="#" data-nav-section="Podcast">CV</a></li>
                             </ul>
                         </div>
+                    </nav>
+                    <nav id="colorlib-main-menu">
+                        {/*<ul>*/}
+                        {/*    <li><a href="https://github.com/dormrod" target="_blank" rel="noopener noreferrer">CV</a></li>*/}
+                        {/*</ul>*/}
                     </nav>
                     <nav id="colorlib-main-menu">
                         <ul>

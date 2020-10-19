@@ -16,6 +16,7 @@ function initializeReactGA() {
 
 class App extends Component {
     render() {
+        initializeReactGA();
         return (
             <div id="colorlib-page">
                 <div id="container-wrap">
